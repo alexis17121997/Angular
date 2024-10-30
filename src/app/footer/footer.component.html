@@ -1,0 +1,56 @@
+<footer>
+  <div class="footer py-4 text-center text-light bg-dark">
+    <div class="container" style="font-style: italic;">
+      <div class="footer-content">
+        <div class="row">
+          <div class="col-xl-4 col-sm-6 col-md-4">
+            <h3 class="footer-title">
+              <span>Bienvenidos a Nuestro Sitio Web de Técnicos PC</span>
+            </h3>
+            <p>Nos dedicamos a ofrecer soporte técnico y recursos para que desarrolles tus habilidades de programación.</p>
+            <h5>Este es un Proyecto en Angular</h5>
+          </div>
+
+          <div class="col-xl-4 col-sm-6 col-md-4">
+            <h3 class="footer-title">
+              <span>Soporte e Infraestructura de Redes</span>
+            </h3>
+            <p>Para consultas técnicas y soporte, puedes comunicarte con nosotros:</p>
+            <nav>
+              <ul class="list-unstyled">
+                <li *ngFor="let casa of contactosjs" class="nav-item">
+                  <a class="nav-link text-light" href="{{casa.href}}">
+                    {{casa.nombre}} - {{casa.titulo}}
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col-xl-4 col-sm-6 col-md-4">
+            <h3 class="footer-title">
+              <span>Más Información</span>
+            </h3>
+            <p>Visita nuestro sitio web para más recursos:</p>
+            <a href="https://www.upds.edu.bo/" target="_blank" class="text-light">https://www.upds.edu.bo/</a>
+            <div class="contact-info">
+              <h5>Contáctanos</h5>
+              <p>Para más información, envíanos un correo a: <a href="mailto:sc.alexander.montero.c@upds.net.bo" class="text-light"></a>sc.alexander.montero.c</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom mt-4">
+        <hr class="bg-light">
+        <p>2024 © Técnico en Computadoras y Redes. Todos los derechos reservados.</p>
+        <div class="social-media">
+          <a href="https://www.facebook.com/tu_pagina" target="_blank" class="text-light mx-2"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/tu_pagina" target="_blank" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/tu_pagina" target="_blank" class="text-light mx-2"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/tu_perfil" target="_blank" class="text-light mx-2"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

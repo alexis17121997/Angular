@@ -1,0 +1,54 @@
+<header class="container-fluid" style="font-style: italic;">
+  <!-- nav siga a la pantalla fixed-top  -->
+  <nav 
+    class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="./assets/images/principal.jpg" width="50" height="50" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/maestria-sanmarcos">Maestría</a>
+          </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Contactos
+          </a>
+
+        
+          <div id="headerContactosId" class="dropdown-menu" aria-labelledby="navbarDpdContactos">
+            <a  *ngFor="let casa of contactosjs" class="dropdown-item" href="{{casa.href}}">{{casa.nombre}} - {{casa.titulo}}</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto_empresa">Acerca de</a>
+        </li>
+
+        </ul>
+        <form class="d-flex fst-italic">
+          <input 
+            id="iBuscar"
+            name="nBuscar"
+            class="form-control me-2 fst-italic" 
+            type="search" 
+            placeholder="Buscar" 
+            aria-label="Search">
+          <button 
+            class="btn btn-outline-secondary fst-italic" 
+            type="submit">
+              Buscar
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+</header>
